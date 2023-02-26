@@ -1,4 +1,4 @@
-@scenari_outline_1
+@scenario_outline_1
 Feature: arama_feature_2
 
   Background: googlea_git

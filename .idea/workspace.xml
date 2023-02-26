@@ -31,8 +31,9 @@
       <change afterPath="$PROJECT_DIR$/../SeleniumNewProject/src/test/java/tests/Day01_BasicNavigations.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SeleniumNewProject/src/test/java/tests/Day02_TitleVerification.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SeleniumNewProject/src/test/java/tests/Day02_URLVerification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/day03_parametre_feature_file.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/day03_scenario_outline_1.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/DataTablesPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/DataTablesStepDefinitions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/day04_scenario_outline_2.feature" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../my-cucumber-project/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../my-cucumber-project/.idea/compiler.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../my-cucumber-project/.idea/dbnavigator.xml" afterDir="false" />
@@ -64,13 +65,19 @@
       <change afterPath="$PROJECT_DIR$/../testNGProject/src/test/java/techproed/tests/Day16_DependsOnMethods.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../testNGProject/src/test/java/techproed/tests/Day16_SoftAssert.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../abc/abc.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runners/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ilkfeaturefile.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ilkfeaturefile.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/ilkfeaturefile.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/ilkfeaturefile.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runners/Runner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/NOTES" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/NOTES" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/NOTES" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/day03_parametre_feature_file.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/day03_scenario_outline_1.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/ilkfeaturefile.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/GooglePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/Runner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/GoogleStepDefinitions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ConfigReader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/Driver$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/Driver.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../com.companyname/com.companyname.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../com.techproed-pom/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../com.techproed-pom/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../com.techproed-pom/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../com.techproed-pom/configuration.properties" afterDir="false" />
@@ -225,6 +232,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Scenario: TC01_personel_olustur" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/day04_scenario_outline_2.feature" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="batch103Cucumber" />
+      <option name="NAME_FILTER" value="^TC01_personel_olustur$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC01_personel_olustur$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: TC01_personel_olustur" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Scenario: TC02_google_tesla_arama" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/ilkfeaturefile.feature" />
@@ -263,6 +289,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.Runner" />
+        <item itemvalue="Cucumber Java.Scenario: TC01_personel_olustur" />
         <item itemvalue="Cucumber Java.Scenario: TC02_google_tesla_arama" />
         <item itemvalue="Cucumber Java.Scenario: TC01_google_iphone_arama" />
       </list>
@@ -292,30 +319,34 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="2430" height="458" key="GridCell.Tab.0.bottom" timestamp="1677358446233">
+    <state width="2430" height="3" key="GridCell.Tab.0.bottom" timestamp="1677444481110">
       <screen x="78" y="25" width="2482" height="1415" />
     </state>
-    <state width="2508" height="3" key="GridCell.Tab.0.bottom/2560.25.1920.1055/0.25.2560.1415@0.25.2560.1415" timestamp="1677354522251" />
+    <state width="2508" height="801" key="GridCell.Tab.0.bottom/2560.25.1920.1055/0.25.2560.1415@0.25.2560.1415" timestamp="1677442305164" />
+    <state width="2430" height="46" key="GridCell.Tab.0.bottom/2560.25.1920.1055/75.25.2485.1415@75.25.2485.1415" timestamp="1677443348562" />
     <state width="2430" height="580" key="GridCell.Tab.0.bottom/2560.25.1920.1055/77.25.2483.1415@77.25.2483.1415" timestamp="1677353263233" />
-    <state width="2430" height="458" key="GridCell.Tab.0.bottom/2560.25.1920.1055/78.25.2482.1415@78.25.2482.1415" timestamp="1677358446233" />
-    <state width="2430" height="458" key="GridCell.Tab.0.center" timestamp="1677358446233">
+    <state width="2430" height="3" key="GridCell.Tab.0.bottom/2560.25.1920.1055/78.25.2482.1415@78.25.2482.1415" timestamp="1677444481110" />
+    <state width="2430" height="3" key="GridCell.Tab.0.center" timestamp="1677444481109">
       <screen x="78" y="25" width="2482" height="1415" />
     </state>
-    <state width="2508" height="3" key="GridCell.Tab.0.center/2560.25.1920.1055/0.25.2560.1415@0.25.2560.1415" timestamp="1677354522250" />
+    <state width="2508" height="801" key="GridCell.Tab.0.center/2560.25.1920.1055/0.25.2560.1415@0.25.2560.1415" timestamp="1677442305163" />
+    <state width="2430" height="46" key="GridCell.Tab.0.center/2560.25.1920.1055/75.25.2485.1415@75.25.2485.1415" timestamp="1677443348561" />
     <state width="2430" height="580" key="GridCell.Tab.0.center/2560.25.1920.1055/77.25.2483.1415@77.25.2483.1415" timestamp="1677353263232" />
-    <state width="2430" height="458" key="GridCell.Tab.0.center/2560.25.1920.1055/78.25.2482.1415@78.25.2482.1415" timestamp="1677358446233" />
-    <state width="2430" height="458" key="GridCell.Tab.0.left" timestamp="1677358446232">
+    <state width="2430" height="3" key="GridCell.Tab.0.center/2560.25.1920.1055/78.25.2482.1415@78.25.2482.1415" timestamp="1677444481109" />
+    <state width="2430" height="3" key="GridCell.Tab.0.left" timestamp="1677444481108">
       <screen x="78" y="25" width="2482" height="1415" />
     </state>
-    <state width="2508" height="3" key="GridCell.Tab.0.left/2560.25.1920.1055/0.25.2560.1415@0.25.2560.1415" timestamp="1677354522250" />
+    <state width="2508" height="801" key="GridCell.Tab.0.left/2560.25.1920.1055/0.25.2560.1415@0.25.2560.1415" timestamp="1677442305163" />
+    <state width="2430" height="46" key="GridCell.Tab.0.left/2560.25.1920.1055/75.25.2485.1415@75.25.2485.1415" timestamp="1677443348557" />
     <state width="2430" height="580" key="GridCell.Tab.0.left/2560.25.1920.1055/77.25.2483.1415@77.25.2483.1415" timestamp="1677353263231" />
-    <state width="2430" height="458" key="GridCell.Tab.0.left/2560.25.1920.1055/78.25.2482.1415@78.25.2482.1415" timestamp="1677358446232" />
-    <state width="2430" height="458" key="GridCell.Tab.0.right" timestamp="1677358446233">
+    <state width="2430" height="3" key="GridCell.Tab.0.left/2560.25.1920.1055/78.25.2482.1415@78.25.2482.1415" timestamp="1677444481108" />
+    <state width="2430" height="3" key="GridCell.Tab.0.right" timestamp="1677444481109">
       <screen x="78" y="25" width="2482" height="1415" />
     </state>
-    <state width="2508" height="3" key="GridCell.Tab.0.right/2560.25.1920.1055/0.25.2560.1415@0.25.2560.1415" timestamp="1677354522251" />
+    <state width="2508" height="801" key="GridCell.Tab.0.right/2560.25.1920.1055/0.25.2560.1415@0.25.2560.1415" timestamp="1677442305164" />
+    <state width="2430" height="46" key="GridCell.Tab.0.right/2560.25.1920.1055/75.25.2485.1415@75.25.2485.1415" timestamp="1677443348562" />
     <state width="2430" height="580" key="GridCell.Tab.0.right/2560.25.1920.1055/77.25.2483.1415@77.25.2483.1415" timestamp="1677353263232" />
-    <state width="2430" height="458" key="GridCell.Tab.0.right/2560.25.1920.1055/78.25.2482.1415@78.25.2482.1415" timestamp="1677358446233" />
+    <state width="2430" height="3" key="GridCell.Tab.0.right/2560.25.1920.1055/78.25.2482.1415@78.25.2482.1415" timestamp="1677444481109" />
     <state x="202" y="264" width="1956" height="1022" key="SettingsEditor" timestamp="1677352906434">
       <screen x="0" y="25" width="2560" height="1415" />
     </state>
