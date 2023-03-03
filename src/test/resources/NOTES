@@ -52,3 +52,23 @@ Yani benzer scenarioyu tekrar tekrar farkli datalarda calistirmak icin kullanili
 Scenario Outline cucumber cok Onemlidir.
 Ne zaman birden fazla data ile islem yaparsak, zaman scenario outline kullanabiliriz.
 Scenario Outline Excel ile atomasyon yapmaya benzer, tek fark, kullanimi daha kolaydir
+++++++++++++++++
+EXCEL
+LoginPage objelerimiz olusturulmus durumda
+HomePage objelerimizi olusturalim
+package pages;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import utilities.Driver;
+
+public class HomePage {
+    public HomePage(){
+        PageFactory.initElements(Driver.getDriver(),this);
+    }
+    @FindBy(xpath = "(//a[@role='button'])[1]")
+    public WebElement firstLogin;
+}
+
+

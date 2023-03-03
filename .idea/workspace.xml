@@ -31,10 +31,14 @@
       <change afterPath="$PROJECT_DIR$/../SeleniumNewProject/src/test/java/tests/Day01_BasicNavigations.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SeleniumNewProject/src/test/java/tests/Day02_TitleVerification.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SeleniumNewProject/src/test/java/tests/Day02_URLVerification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/LoginStepDefinitions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/day05_data_tables.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/ExcelStepDefinitions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/utilities/ExcelUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/utilities/ReusableMethods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/cucumber.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/day06_excel_automation.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/day06_failed_scenarios.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testdata/mysmoketestdata.xlsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../my-cucumber-project/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../my-cucumber-project/.idea/compiler.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../my-cucumber-project/.idea/dbnavigator.xml" afterDir="false" />
@@ -68,12 +72,14 @@
       <change beforePath="$PROJECT_DIR$/../abc/abc.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runners/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/DataTablesStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/DataTablesStepDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/NOTES" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/NOTES" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-cucumber-reports.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ilkrapor.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/json-reports/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/json-reports/cucumber.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/hooks/Hooks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/hooks/Hooks.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/runners/Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runners/Runner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/DataTablesStepDefinitions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefinitions/DataTablesStepDefinitions.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/xml-report/cucumber.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/xml-report/cucumber.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../com.companyname/com.companyname.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../com.techproed-pom/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../com.techproed-pom/.gitignore" afterDir="false" />
@@ -207,12 +213,16 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/testdata" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources/testdata" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/target" />
     </key>
@@ -345,34 +355,34 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="2508" height="714" key="GridCell.Tab.0.bottom" timestamp="1677790351384">
-      <screen x="78" y="25" width="2482" height="1415" />
+    <state width="2508" height="3" key="GridCell.Tab.0.bottom" timestamp="1677873483126">
+      <screen x="0" y="25" width="2560" height="1415" />
     </state>
-    <state width="2508" height="184" key="GridCell.Tab.0.bottom/2560.25.1920.1055/0.25.2560.1415@0.25.2560.1415" timestamp="1677785852688" />
+    <state width="2508" height="3" key="GridCell.Tab.0.bottom/2560.25.1920.1055/0.25.2560.1415@0.25.2560.1415" timestamp="1677873483126" />
     <state width="2430" height="46" key="GridCell.Tab.0.bottom/2560.25.1920.1055/75.25.2485.1415@75.25.2485.1415" timestamp="1677443348562" />
     <state width="2430" height="580" key="GridCell.Tab.0.bottom/2560.25.1920.1055/77.25.2483.1415@77.25.2483.1415" timestamp="1677353263233" />
-    <state width="2508" height="714" key="GridCell.Tab.0.bottom/2560.25.1920.1055/78.25.2482.1415@78.25.2482.1415" timestamp="1677790351384" />
-    <state width="2508" height="714" key="GridCell.Tab.0.center" timestamp="1677790351383">
-      <screen x="78" y="25" width="2482" height="1415" />
+    <state width="2430" height="688" key="GridCell.Tab.0.bottom/2560.25.1920.1055/78.25.2482.1415@78.25.2482.1415" timestamp="1677870587506" />
+    <state width="2508" height="3" key="GridCell.Tab.0.center" timestamp="1677873483125">
+      <screen x="0" y="25" width="2560" height="1415" />
     </state>
-    <state width="2508" height="184" key="GridCell.Tab.0.center/2560.25.1920.1055/0.25.2560.1415@0.25.2560.1415" timestamp="1677785852687" />
+    <state width="2508" height="3" key="GridCell.Tab.0.center/2560.25.1920.1055/0.25.2560.1415@0.25.2560.1415" timestamp="1677873483125" />
     <state width="2430" height="46" key="GridCell.Tab.0.center/2560.25.1920.1055/75.25.2485.1415@75.25.2485.1415" timestamp="1677443348561" />
     <state width="2430" height="580" key="GridCell.Tab.0.center/2560.25.1920.1055/77.25.2483.1415@77.25.2483.1415" timestamp="1677353263232" />
-    <state width="2508" height="714" key="GridCell.Tab.0.center/2560.25.1920.1055/78.25.2482.1415@78.25.2482.1415" timestamp="1677790351383" />
-    <state width="2508" height="714" key="GridCell.Tab.0.left" timestamp="1677790351381">
-      <screen x="78" y="25" width="2482" height="1415" />
+    <state width="2430" height="688" key="GridCell.Tab.0.center/2560.25.1920.1055/78.25.2482.1415@78.25.2482.1415" timestamp="1677870587505" />
+    <state width="2508" height="3" key="GridCell.Tab.0.left" timestamp="1677873483124">
+      <screen x="0" y="25" width="2560" height="1415" />
     </state>
-    <state width="2508" height="184" key="GridCell.Tab.0.left/2560.25.1920.1055/0.25.2560.1415@0.25.2560.1415" timestamp="1677785852687" />
+    <state width="2508" height="3" key="GridCell.Tab.0.left/2560.25.1920.1055/0.25.2560.1415@0.25.2560.1415" timestamp="1677873483124" />
     <state width="2430" height="46" key="GridCell.Tab.0.left/2560.25.1920.1055/75.25.2485.1415@75.25.2485.1415" timestamp="1677443348557" />
     <state width="2430" height="580" key="GridCell.Tab.0.left/2560.25.1920.1055/77.25.2483.1415@77.25.2483.1415" timestamp="1677353263231" />
-    <state width="2508" height="714" key="GridCell.Tab.0.left/2560.25.1920.1055/78.25.2482.1415@78.25.2482.1415" timestamp="1677790351381" />
-    <state width="2508" height="714" key="GridCell.Tab.0.right" timestamp="1677790351383">
-      <screen x="78" y="25" width="2482" height="1415" />
+    <state width="2430" height="688" key="GridCell.Tab.0.left/2560.25.1920.1055/78.25.2482.1415@78.25.2482.1415" timestamp="1677870587504" />
+    <state width="2508" height="3" key="GridCell.Tab.0.right" timestamp="1677873483125">
+      <screen x="0" y="25" width="2560" height="1415" />
     </state>
-    <state width="2508" height="184" key="GridCell.Tab.0.right/2560.25.1920.1055/0.25.2560.1415@0.25.2560.1415" timestamp="1677785852688" />
+    <state width="2508" height="3" key="GridCell.Tab.0.right/2560.25.1920.1055/0.25.2560.1415@0.25.2560.1415" timestamp="1677873483125" />
     <state width="2430" height="46" key="GridCell.Tab.0.right/2560.25.1920.1055/75.25.2485.1415@75.25.2485.1415" timestamp="1677443348562" />
     <state width="2430" height="580" key="GridCell.Tab.0.right/2560.25.1920.1055/77.25.2483.1415@77.25.2483.1415" timestamp="1677353263232" />
-    <state width="2508" height="714" key="GridCell.Tab.0.right/2560.25.1920.1055/78.25.2482.1415@78.25.2482.1415" timestamp="1677790351383" />
+    <state width="2430" height="688" key="GridCell.Tab.0.right/2560.25.1920.1055/78.25.2482.1415@78.25.2482.1415" timestamp="1677870587505" />
     <state x="274" y="264" width="1956" height="1022" key="SettingsEditor" timestamp="1677783453968">
       <screen x="78" y="25" width="2482" height="1415" />
     </state>
