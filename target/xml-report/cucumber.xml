@@ -1,87 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="25.64" tests="5" skipped="0" failures="0" errors="0">
-<testcase classname="personel_olusturma" name="TC01_personel_olustur - personel_bilgileri - Example #1.1" time="6.375">
+<testsuite name="Cucumber" time="10.275" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="data_tables" name="TC01_musteri_giris_testi" time="10.033">
 <system-out><![CDATA[
-Given kullanici "https://editor.datatables.net/" gider......................passed
-When kullanici new butonuna tiklar..........................................passed
-And kullanici first name "john" girer.......................................passed
-And kullanici last name "walker" girer......................................passed
-And kullanici positions "SDET" girer........................................passed
-And kullanici office "ISTANBUL" girer.......................................passed
-And kullanici extension "345" girer.........................................passed
-And kullanici start_date "2023-03-01" girer.................................passed
-And kullanici salary "100000" girer.........................................passed
-And kullanici create buttonuna basar........................................passed
-When kullanici firstname ile "john" arar....................................passed
-Then firstname "john" in olustugunu test et.................................passed
-Then close the application..................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="personel_olusturma" name="TC01_personel_olustur - personel_bilgileri - Example #1.2" time="5.581">
-<system-out><![CDATA[
-Given kullanici "https://editor.datatables.net/" gider......................passed
-When kullanici new butonuna tiklar..........................................passed
-And kullanici first name "zeynep" girer.....................................passed
-And kullanici last name "black" girer.......................................passed
-And kullanici positions "developer" girer...................................passed
-And kullanici office "ankara" girer.........................................passed
-And kullanici extension "3412" girer........................................passed
-And kullanici start_date "2023-03-04" girer.................................passed
-And kullanici salary "800000" girer.........................................passed
-And kullanici create buttonuna basar........................................passed
-When kullanici firstname ile "zeynep" arar..................................passed
-Then firstname "zeynep" in olustugunu test et...............................passed
-Then close the application..................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="personel_olusturma" name="TC01_personel_olustur - personel_bilgileri - Example #1.3" time="4.594">
-<system-out><![CDATA[
-Given kullanici "https://editor.datatables.net/" gider......................passed
-When kullanici new butonuna tiklar..........................................passed
-And kullanici first name "ali" girer........................................passed
-And kullanici last name "tez" girer.........................................passed
-And kullanici positions "BA" girer..........................................passed
-And kullanici office "Tokat" girer..........................................passed
-And kullanici extension "678" girer.........................................passed
-And kullanici start_date "2023-03-08" girer.................................passed
-And kullanici salary "870000" girer.........................................passed
-And kullanici create buttonuna basar........................................passed
-When kullanici firstname ile "ali" arar.....................................passed
-Then firstname "ali" in olustugunu test et..................................passed
-Then close the application..................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="personel_olusturma" name="TC01_personel_olustur - personel_bilgileri - Example #1.4" time="4.509">
-<system-out><![CDATA[
-Given kullanici "https://editor.datatables.net/" gider......................passed
-When kullanici new butonuna tiklar..........................................passed
-And kullanici first name "feyza" girer......................................passed
-And kullanici last name "sar" girer.........................................passed
-And kullanici positions "PO" girer..........................................passed
-And kullanici office "Izmir" girer..........................................passed
-And kullanici extension "7456" girer........................................passed
-And kullanici start_date "2023-03-03" girer.................................passed
-And kullanici salary "860000" girer.........................................passed
-And kullanici create buttonuna basar........................................passed
-When kullanici firstname ile "feyza" arar...................................passed
-Then firstname "feyza" in olustugunu test et................................passed
-Then close the application..................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="personel_olusturma" name="TC01_personel_olustur - personel_bilgileri - Example #1.5" time="4.335">
-<system-out><![CDATA[
-Given kullanici "https://editor.datatables.net/" gider......................passed
-When kullanici new butonuna tiklar..........................................passed
-And kullanici first name "Mukesh" girer.....................................passed
-And kullanici last name "Srivasan" girer....................................passed
-And kullanici positions "Scrum Master" girer................................passed
-And kullanici office "Haydarabat" girer.....................................passed
-And kullanici extension "980" girer.........................................passed
-And kullanici start_date "2023-03-09" girer.................................passed
-And kullanici salary "50000" girer..........................................passed
-And kullanici create buttonuna basar........................................passed
-When kullanici firstname ile "Mukesh" arar..................................passed
-Then firstname "Mukesh" in olustugunu test et...............................passed
+Given kullanici "https://www.bluerentalcars.com/login" gider................passed
+When kullanici emaili ve sifresini girer....................................passed
 Then close the application..................................................passed
 ]]></system-out>
 </testcase>

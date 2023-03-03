@@ -14,7 +14,6 @@ public class DataTablesStepDefinitions {
     public void kullanici_gider(String string) {
         Driver.getDriver().get(string);
     }
-
     @When("kullanici new butonuna tiklar")
     public void kullanici_new_butonuna_tiklar() {
 //        dataTablesPage.newButon.click();
