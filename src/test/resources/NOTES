@@ -54,8 +54,77 @@ Ne zaman birden fazla data ile islem yaparsak, zaman scenario outline kullanabil
 Scenario Outline Excel ile atomasyon yapmaya benzer, tek fark, kullanimi daha kolaydir
 ++++++++++++++++
 EXCEL
-LoginPage objelerimiz olusturulmus durumda
-HomePage objelerimizi olusturalim
+1. Config Properties e URL i ekleyin:
+app_url=https://www.bluerentalcars.com/
+2. Feature file olusturun:
+@excel_automation
+Feature: excel_login_feature
+  Scenario: TC01_musteri_giris_testi
+    Given kullanici "customer_info" bilgileri ile giris yapar
+3. Step Definitions:
+package stepdefinitions;
+
+import io.cucumber.java.en.Given;
+import org.junit.Assert;
+import pages.HomePage;
+import pages.LoginPage;
+import utilities.ConfigReader;
+import utilities.Driver;
+import utilities.ExcelUtils;
+import utilities.ReusableMethods;
+
+import java.io.IOException;
+import java.util.List;
+import java.util.Map;
+
+public class ExcelStepDefinitions {
+//Page Objelerini Olustur
+    HomePage homePage;
+    LoginPage loginPage;
+    ExcelUtils excelUtils;
+    List<Map<String,String>> excelData;
+
+    @Given("kullanici {string} bilgileri ile giris yapar")
+    public void kullanici_bilgileri_ile_giris_yapar(String string) throws IOException {
+        String path="./src/test/resources/testdata/mysmoketestdata.xlsx";
+        String sayfa = "customer_info";
+        excelUtils= new ExcelUtils(path,sayfa);
+        excelData=excelUtils.getDataList();
+//        NOTE Loop kodunu tamamla
+        for(Map<String,String> data : excelData){
+//            Ana sayfaya git
+            Driver.getDriver().get(ConfigReader.getProperty("app_url"));
+            homePage = new HomePage();
+            loginPage = new LoginPage();
+//            ana sayfa login butonuna tikla
+            homePage.firstLogin.click();
+            ReusableMethods.waitFor(1);
+//            emaili gonder
+            loginPage.email.sendKeys(data.get("username"));
+            ReusableMethods.waitFor(1);
+//            sifre gonder
+            loginPage.password.sendKeys(data.get("password"));
+            ReusableMethods.waitFor(1);
+//            login butonuna tikla
+            loginPage.login.click();
+            ReusableMethods.waitFor(1);
+//            GIRIS YAPILDI.GIRIS YAPILDIGINI VERIFY EDELIM.
+//            ID gorunur ise giris basarilidir
+            Assert.assertTrue(homePage.userID.isDisplayed());
+            ReusableMethods.getScreenshot("Login_Goruntusu");
+//            LOG OUT YAPALIM
+            homePage.userID.click();
+            ReusableMethods.waitFor(1);
+            homePage.logOutLink.click();
+            ReusableMethods.waitFor(1);
+            homePage.OK.click();
+            ReusableMethods.waitFor(1);
+        }
+        Driver.closeDriver();
+    }
+}
+
+4. HomePage:
 package pages;
 
 import org.openqa.selenium.WebElement;
@@ -67,8 +136,70 @@ public class HomePage {
     public HomePage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
+
     @FindBy(xpath = "(//a[@role='button'])[1]")
     public WebElement firstLogin;
+
+    @FindBy(id = "dropdown-basic-button")
+    public WebElement userID;
+
+    @FindBy(xpath = "//a[text()='Logout']")
+    public WebElement logOutLink;
+
+    @FindBy(xpath = "//button[contains(text(),'OK')]")
+    public WebElement OK;
+
+
 }
+5. LoginPage :
+package pages;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import utilities.Driver;
+
+public class LoginPage {
+    public LoginPage(){
+        PageFactory.initElements(Driver.getDriver(),this);
+    }
+
+    @FindBy(xpath = "//input[@id='formBasicEmail']")
+    public WebElement email;
+
+    @FindBy(xpath = "//input[@id='formBasicPassword']")
+    public WebElement password;
+
+    @FindBy(xpath = "//button[text()=' Login']")
+    public WebElement login;
+}
+6. Runner:
+package runners;
+
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import org.junit.runner.RunWith;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(
+        plugin = {
+            "pretty",//raporlarin daha ikunakli olmasi icin
+            "html:target/default-cucumber-reports.html",
+            "json:target/json-reports/cucumber.json",
+            "junit:target/xml-report/cucumber.xml"
+        },
+        monochrome = true,//raporlarin consoleda okunakli sekilde cikmasi icin
+        features = "./src/test/resources/features",//features folder path
+        glue = {"stepdefinitions","hooks"},   //stepdefinitions path
+        tags = "@excel_automation",
+        dryRun = false
+)
+public class Runner {
+}
+//Bu sinif Test caseleri RUN etmek icin kullanilir
+//Ve konfigurasyonlar icin kullanilir
+//Runner class, features file lar ile step defitions i birbirile baglar
 
 
+**********************PARALLEL TEST******************
+1. Plugins leri pom.xml e ekle
