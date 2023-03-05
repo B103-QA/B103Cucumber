@@ -203,3 +203,134 @@ public class Runner {
 
 **********************PARALLEL TEST******************
 1. Plugins leri pom.xml e ekle
+    *surefire -> parallel test icin
+    *failsafe -> parallel testlerde bir testin fail olmasi durumunda diger testler calismaya devam etmesini kolaylastirir
+    *cucumber-report -> extra renkli gelismis raporlar verir
+2. Coklu runner class olustur. Bu runnerlar farkli scenarilari calistirsin
+    *SmokeTestRunner
+    *RegressionTestRunner
+    *TestRunner
+NOTE: Burda kullanilan taglerden en az bir tanesi feature fileda olmali. Aksi takdirde test bulunamaz
+3. Terminal/Power Shell/CMD kullanarak, maven kodu ile testleri calistir:
+mvn clean verify
+mvn clean install
+
+NOTE: Cucumber Reporting Linki :
+https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting
+https://github.com/damianszczepanik/maven-cucumber-reporting
+
+NOTE: Bilgisayardaki terminal CMD ile tester ayni sekilde calistirilabilir
+Bu durumda projenin icine girmemiz gerekir:
+cd ABSOLUTE PATH
+cd /Users/techproed/IdeaProjects/batch103Cucumber
+**********SPARK REPORTS***********
+1.resources klasorunde extent-config.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <configuration>
+        <!-- report theme -->
+        <!-- standard, dark -->
+        <theme>dark</theme>
+
+        <!-- document encoding -->
+        <!-- defaults to UTF-8 -->
+        <encoding>UTF-8</encoding>
+
+        <!-- protocol for script and stylesheets -->
+        <!-- defaults to https -->
+        <protocol>http</protocol>
+
+        <!-- title of the document -->
+        <documentTitle>My Spark Reports</documentTitle>
+
+        <!-- report name - displayed at top-nav -->
+        <reportName>Smoke Test Report</reportName>
+
+        <!-- location of charts in the test view -->
+        <!-- top, bottom -->
+        <testViewChartLocation>bottom</testViewChartLocation>
+
+        <!-- custom javascript -->
+        <scripts>
+
+            <![CDATA[
+$(document).ready(function() {
+});
+]]>
+        </scripts>
+        <!-- custom styles -->
+        <styles>
+            <![CDATA[
+]]>
+        </styles>
+    </configuration>
+</extentreports>
+2.resources klasorunde extent.properties
+#HTML REPORT
+extent.reporter.spark.start=true
+extent.reporter.spark.out=test-output/SparkReport/Spark.html
+extent.reporter.spark.config=src/test/resources/extent-config.xml
+
+#PDF REPORT
+extent.reporter.pdf.start=true
+extent.reporter.pdf.out=test-output/PdfReport/ExtentPdf.pdf
+
+#SCREENSHOT PATH
+screenshot.dir=test-output/
+screenshot.rel.path=../
+
+extent.reporter.spark.vieworder=dashboard,test,category,exception,author,device,log
+
+systeminfo.os=Mac
+#systeminfo.os=Windows
+3. Spark report dependency pom a ekle:  https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber7-adapter/1.6.0
+        <!-- https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber7-adapter -->
+        <dependency>
+            <groupId>tech.grasshopper</groupId>
+            <artifactId>extentreports-cucumber7-adapter</artifactId>
+            <version>1.6.0</version>
+        </dependency>
+4. Spark report plugin i Runner a ekle
+"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+
+RUNNER CLASS:
+package runners;
+
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import org.junit.runner.RunWith;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(
+        plugin = {
+                "pretty",//raporlarin daha ikunakli olmasi icin
+                "html:target/default-cucumber-reports.html",
+                "json:target/json-reports/cucumber.json",
+                "junit:target/xml-report/cucumber.xml",
+                "rerun:target/failed_scenarios.txt",
+                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+        },
+        monochrome = true,//raporlarin consoleda okunakli sekilde cikmasi icin
+        features = "./src/test/resources/features",//features folder path
+        glue = {"stepdefinitions","hooks"},   //stepdefinitions path
+        tags = "@failed_scenario",
+        dryRun = false
+)
+public class Runner {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

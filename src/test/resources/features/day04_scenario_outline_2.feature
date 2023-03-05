@@ -14,6 +14,7 @@ Feature: personel_olusturma
     And kullanici create buttonuna basar
     When kullanici firstname ile "<firstname>" arar
     Then firstname "<firstname>" in olustugunu test et
+    Then ekran goruntusu al
     Then close the application
 
     Examples: personel_bilgileri

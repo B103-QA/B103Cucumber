@@ -31,23 +31,9 @@
       <change afterPath="$PROJECT_DIR$/../SeleniumNewProject/src/test/java/tests/Day01_BasicNavigations.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SeleniumNewProject/src/test/java/tests/Day02_TitleVerification.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SeleniumNewProject/src/test/java/tests/Day02_URLVerification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/runners/FailedRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/runners/RegressionTestRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/runners/SmokeTestRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/testdata/mysmoketestdata.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/Login_Goruntusu20230304010040.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/Login_Goruntusu20230304010048.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/Login_Goruntusu20230304010057.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/Login_Goruntusu20230304010106.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/Login_Goruntusu20230304010117.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/Login_Goruntusu20230304124048.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/Login_Goruntusu20230304124057.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/Login_Goruntusu20230304124105.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/Login_Goruntusu20230304124114.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/GenelStepDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/extent-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/extent.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../my-cucumber-project/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../my-cucumber-project/.idea/compiler.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../my-cucumber-project/.idea/dbnavigator.xml" afterDir="false" />
@@ -80,37 +66,23 @@
       <change afterPath="$PROJECT_DIR$/../testNGProject/src/test/java/techproed/tests/Day16_SoftAssert.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../abc/abc.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runners/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/ExcelStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/ExcelStepDefinitions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/NOTES" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/NOTES" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/day03_parametre_feature_file.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/day03_parametre_feature_file.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/day03_scenario_outline_1.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/day03_scenario_outline_1.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/day04_scenario_outline_2.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/day04_scenario_outline_2.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/day06_excel_automation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/day06_excel_automation.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/day06_failed_scenarios.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/day06_failed_scenarios.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/json-reports/cucumber.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/NOTES" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/NOTES" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/day03_parametre_feature_file.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/day03_parametre_feature_file.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/day03_scenario_outline_1.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/day03_scenario_outline_1.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/day04_scenario_outline_2.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/day04_scenario_outline_2.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/day06_excel_automation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/day06_excel_automation.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/features/day06_failed_scenarios.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/day06_failed_scenarios.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/hooks/Hooks.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/DataTablesPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/GooglePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LoginPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/Runner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/DataTablesStepDefinitions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/GoogleStepDefinitions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/LoginStepDefinitions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ConfigReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/Driver$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/Driver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/xml-report/cucumber.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Screenshots/Login_Goruntusu20230304010040.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Screenshots/Login_Goruntusu20230304010048.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Screenshots/Login_Goruntusu20230304010057.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Screenshots/Login_Goruntusu20230304010106.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Screenshots/Login_Goruntusu20230304010117.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Screenshots/Login_Goruntusu20230304124048.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Screenshots/Login_Goruntusu20230304124057.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Screenshots/Login_Goruntusu20230304124105.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Screenshots/Login_Goruntusu20230304124114.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../com.companyname/com.companyname.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../com.techproed-pom/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../com.techproed-pom/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../com.techproed-pom/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../com.techproed-pom/configuration.properties" afterDir="false" />
@@ -250,14 +222,14 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/test/resources/testdata" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/target" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources/testdata" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.FailedRunner">
+  <component name="RunManager" selected="JUnit.Runner">
     <configuration name="Scenario: TC01_musteri_giris_testi" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/day05_data_tables.feature" />
@@ -349,8 +321,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FailedRunner" />
         <item itemvalue="JUnit.Runner" />
+        <item itemvalue="JUnit.FailedRunner" />
         <item itemvalue="Cucumber Java.Scenario: TC01_musteri_giris_testi" />
         <item itemvalue="Cucumber Java.Scenario: TC01_personel_olustur" />
         <item itemvalue="Cucumber Java.Scenario: TC02_google_tesla_arama" />
@@ -381,34 +353,34 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="2508" height="574" key="GridCell.Tab.0.bottom" timestamp="1677963146784">
+    <state width="2430" height="314" key="GridCell.Tab.0.bottom" timestamp="1678045480301">
       <screen x="78" y="25" width="2482" height="1415" />
     </state>
     <state width="2508" height="775" key="GridCell.Tab.0.bottom/2560.25.1920.1055/0.25.2560.1415@0.25.2560.1415" timestamp="1677898849335" />
     <state width="2430" height="46" key="GridCell.Tab.0.bottom/2560.25.1920.1055/75.25.2485.1415@75.25.2485.1415" timestamp="1677443348562" />
     <state width="2430" height="580" key="GridCell.Tab.0.bottom/2560.25.1920.1055/77.25.2483.1415@77.25.2483.1415" timestamp="1677353263233" />
-    <state width="2508" height="574" key="GridCell.Tab.0.bottom/2560.25.1920.1055/78.25.2482.1415@78.25.2482.1415" timestamp="1677963146784" />
-    <state width="2508" height="574" key="GridCell.Tab.0.center" timestamp="1677963146783">
+    <state width="2430" height="314" key="GridCell.Tab.0.bottom/2560.25.1920.1055/78.25.2482.1415@78.25.2482.1415" timestamp="1678045480301" />
+    <state width="2430" height="314" key="GridCell.Tab.0.center" timestamp="1678045480300">
       <screen x="78" y="25" width="2482" height="1415" />
     </state>
     <state width="2508" height="775" key="GridCell.Tab.0.center/2560.25.1920.1055/0.25.2560.1415@0.25.2560.1415" timestamp="1677898849334" />
     <state width="2430" height="46" key="GridCell.Tab.0.center/2560.25.1920.1055/75.25.2485.1415@75.25.2485.1415" timestamp="1677443348561" />
     <state width="2430" height="580" key="GridCell.Tab.0.center/2560.25.1920.1055/77.25.2483.1415@77.25.2483.1415" timestamp="1677353263232" />
-    <state width="2508" height="574" key="GridCell.Tab.0.center/2560.25.1920.1055/78.25.2482.1415@78.25.2482.1415" timestamp="1677963146783" />
-    <state width="2508" height="574" key="GridCell.Tab.0.left" timestamp="1677963146782">
+    <state width="2430" height="314" key="GridCell.Tab.0.center/2560.25.1920.1055/78.25.2482.1415@78.25.2482.1415" timestamp="1678045480300" />
+    <state width="2430" height="314" key="GridCell.Tab.0.left" timestamp="1678045480300">
       <screen x="78" y="25" width="2482" height="1415" />
     </state>
     <state width="2508" height="775" key="GridCell.Tab.0.left/2560.25.1920.1055/0.25.2560.1415@0.25.2560.1415" timestamp="1677898849333" />
     <state width="2430" height="46" key="GridCell.Tab.0.left/2560.25.1920.1055/75.25.2485.1415@75.25.2485.1415" timestamp="1677443348557" />
     <state width="2430" height="580" key="GridCell.Tab.0.left/2560.25.1920.1055/77.25.2483.1415@77.25.2483.1415" timestamp="1677353263231" />
-    <state width="2508" height="574" key="GridCell.Tab.0.left/2560.25.1920.1055/78.25.2482.1415@78.25.2482.1415" timestamp="1677963146782" />
-    <state width="2508" height="574" key="GridCell.Tab.0.right" timestamp="1677963146783">
+    <state width="2430" height="314" key="GridCell.Tab.0.left/2560.25.1920.1055/78.25.2482.1415@78.25.2482.1415" timestamp="1678045480300" />
+    <state width="2430" height="314" key="GridCell.Tab.0.right" timestamp="1678045480300">
       <screen x="78" y="25" width="2482" height="1415" />
     </state>
     <state width="2508" height="775" key="GridCell.Tab.0.right/2560.25.1920.1055/0.25.2560.1415@0.25.2560.1415" timestamp="1677898849335" />
     <state width="2430" height="46" key="GridCell.Tab.0.right/2560.25.1920.1055/75.25.2485.1415@75.25.2485.1415" timestamp="1677443348562" />
     <state width="2430" height="580" key="GridCell.Tab.0.right/2560.25.1920.1055/77.25.2483.1415@77.25.2483.1415" timestamp="1677353263232" />
-    <state width="2508" height="574" key="GridCell.Tab.0.right/2560.25.1920.1055/78.25.2482.1415@78.25.2482.1415" timestamp="1677963146783" />
+    <state width="2430" height="314" key="GridCell.Tab.0.right/2560.25.1920.1055/78.25.2482.1415@78.25.2482.1415" timestamp="1678045480300" />
     <state x="274" y="264" width="1956" height="1022" key="SettingsEditor" timestamp="1677783453968">
       <screen x="78" y="25" width="2482" height="1415" />
     </state>

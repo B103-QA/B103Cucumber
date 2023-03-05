@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="37.937" tests="2" skipped="0" failures="1" errors="0">
+<testcase classname="hooks_test" name="TC01_google_iphone_arama" time="20.801">
+<failure type="java.lang.AssertionError">
+<![CDATA[java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepdefinitions.GoogleStepDefinitions.sonuclarin_icerdigini_dogrula(GoogleStepDefinitions.java:56)
+	at ✽.sonuclarin "karpuz" icerdigini dogrula(file:///Users/techproed/IdeaProjects/batch103Cucumber/./src/test/resources/features/day06_failed_scenarios.feature:9)
+]]>
+</failure>
+<system-out><![CDATA[
+Given kullanici google gider................................................passed
+When kullanici "iphone" için arama yapar....................................passed
+Then sonuclarin "karpuz" icerdigini dogrula.................................failed
+Then close the application..................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="hooks_test" name="TC02_google_tesla_arama" time="16.949">
+<system-out><![CDATA[
+Given kullanici google gider................................................passed
+When kullanici "tesla" için arama yapar.....................................passed
+Then sonuclarin "tesla" icerdigini dogrula..................................passed
+Then ekran goruntusu al.....................................................passed
+Then close the application..................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
